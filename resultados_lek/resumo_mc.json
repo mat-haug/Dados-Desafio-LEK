@@ -1,0 +1,46 @@
+{
+  "top2": [
+    "Milho",
+    "Cana-de-Acucar (Acucar)"
+  ],
+  "premissas": {
+    "P-01": "N_SIMUL=10000",
+    "P-02": "HORIZON=5",
+    "P-03": "HIST_START=2005",
+    "P-04": "{'Milho': 0.2, 'Cafe (Arabica)': 0.15, 'Cana-de-Acucar (Acucar)': 0.2, 'Citros (OJ_Laranja)': 0.25, 'Trigo': 0.2}",
+    "P-05": "{'tamanho_mercado_usd': 0.2, 'crescimento_demanda': 0.18, 'posicao_brasil_producao': 0.15, 'posicao_brasil_export': 0.12, 'tendencia_preco': 0.12, 'volatilidade_preco': 0.08, 'yield_trend_brasil': 0.1, 'stocks_to_use': 0.05}",
+    "P-06": "fallback mu=0.02 sigma=0.05",
+    "P-07": "{'Milho': 0.01, 'Cafe (Arabica)': 0.012, 'Cana-de-Acucar (Acucar)': 0.008, 'Citros (OJ_Laranja)': 0.015, 'Trigo': 0.01}",
+    "P-08": "FED_PRICE_IMPACT=-0.015",
+    "P-09": "{2025: 4.25, 2026: 3.5, 2027: 3.0, 2028: 3.0, 2029: 3.0}",
+    "P-10": "CPI_GROWTH=0.025",
+    "P-11": "VIX_PROJ=18.0"
+  },
+  "scoring": [
+    {
+      "Ranking": 1,
+      "Cultura": "Milho",
+      "Score_Final": 5.79
+    },
+    {
+      "Ranking": 2,
+      "Cultura": "Cana-de-Acucar (Acucar)",
+      "Score_Final": 4.31
+    },
+    {
+      "Ranking": 3,
+      "Cultura": "Trigo",
+      "Score_Final": 4.26
+    },
+    {
+      "Ranking": 4,
+      "Cultura": "Cafe (Arabica)",
+      "Score_Final": 4.25
+    },
+    {
+      "Ranking": 5,
+      "Cultura": "Citros (OJ_Laranja)",
+      "Score_Final": 2.96
+    }
+  ]
+}

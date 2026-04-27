@@ -1,0 +1,87 @@
+{
+  "top2": [
+    "Citros (OJ)",
+    "Cafe (Arabica)"
+  ],
+  "n_simulacoes": 10000,
+  "horizonte_anos": 5,
+  "hist_start_year": 2005,
+  "premissas_externas": {
+    "P-01": "N_SIMUL = 10,000 (padrao literatura)",
+    "P-02": "HORIZON = 5 anos",
+    "P-03": "Precos historicos USDA/ICE/CBOT – NAO estao na base fornecida",
+    "P-04": "Kappa OU por cultura (literatura Schwartz 1997)",
+    "P-05": "Pesos scoring multicriterio (decisao analitica da equipe)",
+    "P-06": "Fallback GBM mu=2%, sigma=5% se serie < 5 obs",
+    "P-07": "Historico a partir de 2005 (descarta 2000-2004 – inconsistencias na base)"
+  },
+  "parametros_mc": {
+    "Milho": {
+      "mu_demanda_pct": 3.06,
+      "sigma_demanda_pct": 2.4,
+      "mu_preco_pct": 4.09,
+      "sigma_preco_pct": 29.1,
+      "kappa_ou": 0.2,
+      "long_run_price": 4.0762
+    },
+    "Cafe (Arabica)": {
+      "mu_demanda_pct": 1.5,
+      "sigma_demanda_pct": 3.31,
+      "mu_preco_pct": 5.48,
+      "sigma_preco_pct": 30.17,
+      "kappa_ou": 0.15,
+      "long_run_price": 1.4772
+    },
+    "Cana-de-acucar": {
+      "mu_demanda_pct": 1.18,
+      "sigma_demanda_pct": 1.58,
+      "mu_preco_pct": 4.21,
+      "sigma_preco_pct": 23.34,
+      "kappa_ou": 0.2,
+      "long_run_price": 0.1582
+    },
+    "Citros (OJ)": {
+      "mu_demanda_pct": -3.18,
+      "sigma_demanda_pct": 3.87,
+      "mu_preco_pct": 3.72,
+      "sigma_preco_pct": 18.92,
+      "kappa_ou": 0.25,
+      "long_run_price": 1.1511
+    },
+    "Trigo": {
+      "mu_demanda_pct": 1.43,
+      "sigma_demanda_pct": 1.88,
+      "mu_preco_pct": 2.73,
+      "sigma_preco_pct": 24.57,
+      "kappa_ou": 0.2,
+      "long_run_price": 5.5838
+    }
+  },
+  "scoring": [
+    {
+      "Ranking": 1,
+      "Cultura": "Citros (OJ)",
+      "Score Final": 6.7
+    },
+    {
+      "Ranking": 2,
+      "Cultura": "Cafe (Arabica)",
+      "Score Final": 5.5
+    },
+    {
+      "Ranking": 3,
+      "Cultura": "Milho",
+      "Score Final": 4.26
+    },
+    {
+      "Ranking": 4,
+      "Cultura": "Cana-de-acucar",
+      "Score Final": 3.98
+    },
+    {
+      "Ranking": 5,
+      "Cultura": "Trigo",
+      "Score Final": 3.52
+    }
+  ]
+}
