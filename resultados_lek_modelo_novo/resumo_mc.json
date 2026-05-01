@@ -1,0 +1,14 @@
+{
+  "top_crops_by_potential": [
+    "Milho",
+    "Cana",
+    "Cafe",
+    "Citros",
+    "Trigo"
+  ],
+  "premissas": {
+    "HIST_START": 2018,
+    "N_SIMUL": 10000,
+    "HORIZON": 5
+  }
+}
